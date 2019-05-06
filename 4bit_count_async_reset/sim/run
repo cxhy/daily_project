@@ -1,0 +1,19 @@
+#!/bin/bash -f
+
+export NOVAS_HOME="/opt/Synopsys/Verdi2015"
+export NOVAS_PLI="${NOVAS_HOME}/share/PLI/VCS/LINUX64"
+export LD_LIBRARY_PATH="$NOVAS_PLI"
+
+export NOVAS="${NOVAS_HOME}/share/PLI/VCS/LINUX64"
+
+export novas_args="-P $NOVAS/novas.tab   $NOVAS/pli.a "
+
+vcs +v2k -sverilog +vcs+lic+wait -full64 -debug_pp \
+       -timescale=1ns/1ps \ 
+       +warn=noCDNYI,noIPDW,noILLGO,noTMR,noPHNE,noIRIID-W \
+       -Mupdate +notimingcheck +nospecify \
+       ${novas_args}\
+       -f filelist \
+
+
+./simv       

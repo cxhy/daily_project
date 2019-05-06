@@ -1,0 +1,8 @@
+*.swp
+novas*
+*.log
+ucli*
+*.fsdb
+simv.daidir/*
+verdiLog/*
+

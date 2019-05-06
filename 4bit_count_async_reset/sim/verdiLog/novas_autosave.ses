@@ -1,0 +1,68 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_K-2015.09-SP1-1
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+[Verdi_1]
+workMode = hardwareDebug
+[hb]
+postSimFile = /home/IC/project/4bit_count_async_reset/sim/tb.fsdb
+syncTime = 1000
+viewport = 128 69 900 744 294 278 58 898
+activeNode = "tb"
+activeScope = "tb"
+activeFile = "../tb/tb.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 0
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "tb"
+sdfCheckUndef = FALSE
+[hb.sourceTab.1]
+scope = tb
+File = /home/IC/project/4bit_count_async_reset/tb/tb.v
+Line = 1
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/IC/project/4bit_count_async_reset/sim
+design = DebussyLib
+hostCommand = hostCommand -f filelist
+[nMemoryManager]
+FsdbFile = /home/IC/project/4bit_count_async_reset/sim/tb.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 28 900 278 100 65
+SessionFile = /home/IC/project/4bit_count_async_reset/sim/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSync = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
