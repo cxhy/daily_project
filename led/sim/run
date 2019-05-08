@@ -1,0 +1,12 @@
+#!/bin/bash -f
+
+
+vcs +v2k -sverilog +vcs+lic+wait -full64 -debug_pp \
+       -timescale=1ns/1ps \
+       +warn=noCDNYI,noIPDW,noILLGO,noTMR,noPHNE,noIRIID-W \
+       -Mupdate +notimingcheck +nospecify \
+       ${novas_args}\
+       -f filelist \
+
+
+./simv       
